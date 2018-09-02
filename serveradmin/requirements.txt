@@ -1,5 +1,5 @@
-django==1.11
-psycopg2
+django==2.1.2
+psycopg2-binary
 django-extensions
 docutils
 Sphinx
