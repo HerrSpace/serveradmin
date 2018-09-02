@@ -3,7 +3,7 @@
 Copyright (c) 2018 InnoGames GmbH
 """
 
-from django.conf.urls import url
+from django.urls import path
 
 from serveradmin.api.views import (
     doc_functions,
@@ -15,10 +15,10 @@ from serveradmin.api.views import (
 )
 
 urlpatterns = [
-    url('^functions$', doc_functions),
-    url('^dataset/query$', dataset_query),
-    url('^dataset/commit$', dataset_commit),
-    url('^dataset/new_object$', dataset_new_object),
-    url('^dataset/create$', dataset_create),
-    url('^call$', api_call),
+    path('functions', doc_functions),
+    path('dataset/query', dataset_query),
+    path('dataset/commit', dataset_commit),
+    path('dataset/new_object', dataset_new_object),
+    path('dataset/create', dataset_create),
+    path('call', api_call),
 ]
